@@ -1,0 +1,268 @@
+/* Write your CSS here */
+.product-item-details-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 40px;
+  width: 100%;
+}
+
+.src-image {
+  width: 35%;
+  height: 450px;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+
+.first-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 35%;
+}
+
+.first-heading {
+  color: #475569;
+  font-size: 32px;
+  margin-top: 0px;
+}
+
+.first-price {
+  color: #171f46;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.products-details-loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rating-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.rating {
+  width: 40px;
+  height: 25px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-img {
+  width: 13px;
+  height: 13px;
+  margin-left: 3px;
+}
+
+.first-para {
+  color: #616e7c;
+  font-size: 16px;
+}
+
+.first-bold {
+  color: #12022f;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.review {
+  color: #475569;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+hr {
+  background-color: #cbced2;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.quantity-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn {
+  border-style: none;
+  background-color: transparent;
+  outline: none;
+  padding: 0px;
+  height: 15px;
+  width: 15px;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.quantity {
+  color: #616e7c;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.add-btn {
+  padding: 5px;
+  width: 80px;
+  height: 25px;
+  background-color: #3b82f6;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 9px;
+  border-radius: 4px;
+  font-family: 'roboto';
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.similar-heading {
+  color: #475569;
+  font-size: 20px;
+  margin-left: 15%;
+}
+
+.similar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.product-details-failure-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.failure-view-image {
+  width: 300px;
+  height: 165px;
+}
+
+@media screen and (min-width: 768px) {
+  .failure-view-image {
+    width: 540px;
+    height: 290px;
+  }
+}
+
+.product-not-found-heading {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-not-found-heading {
+    font-size: 48px;
+  }
+}
+
+.button {
+  padding: 5px;
+  background-color: #3b82f6;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+  font-family: 'roboto';
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.para {
+  padding-top: 2px;
+  padding-left: 4px;
+  height: 25px;
+  font-family: 'roboto';
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-icons {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .first-container {
+    flex-direction: column;
+  }
+  .first-content {
+    width: 100%;
+  }
+  .src-image {
+    width: 80%;
+  }
+  .first-heading {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .first-para {
+    font-size: 14px;
+  }
+  .first-bold {
+    font-size: 12px;
+  }
+  .similar-heading {
+    margin-left: 10%;
+  }
+  .similar-list {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
